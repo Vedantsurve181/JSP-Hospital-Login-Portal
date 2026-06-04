@@ -1,0 +1,23 @@
+CREATE TABLE hosp(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100),
+    age INT,
+    gender VARCHAR(20),
+    disease VARCHAR(100),
+    contact VARCHAR(20)
+);
+select * from hosp;
+
+CREATE TABLE emergency_patients(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    patient_name VARCHAR(100),
+    age INT,
+    gender VARCHAR(20),
+    blood_group VARCHAR(10),
+    condition_level VARCHAR(50),
+    doctor_name VARCHAR(100),
+    ward_number VARCHAR(20),
+    relative_contact VARCHAR(20),
+    admission_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+select * from emergency_patients;
